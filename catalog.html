@@ -77,11 +77,31 @@
 					</ul>
 				<h3>Особенности:</h3>
 					<ul class="filter-pecificity">
-						<li>Слайдер</li>
-						<li>Блок преимеществ</li>
-						<li>Новости</li>
-						<li>Галерея</li>
-						<li>Корзина</li>
+						<li>
+							<input type="checkbox" name="slyder" id="filter-slyder" checked>
+							<label for="filter-slyder">Cлайдер
+							</label>
+						</li>
+						<li>
+							<input type="checkbox" name="advantage" id="filter-advantage">
+							<label for="filter-advantage">Блок преимуществ
+							</label>
+						</li>
+						<li>
+							<input type="checkbox" name="news" id="filter-news" checked>
+							<label for="filter-news">Новости
+							</label>
+						</li>
+						<li>
+							<input type="checkbox" name="gallery" id="filter-gallery">
+							<label for="filter-gallery">Галерея
+							</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cart" id="filter-cart">
+							<label for="filter-cart">Корзина
+							</label>
+						</li>
 					</ul>
 					<ul class="filter-total">
 						<li> <a class="show" href="">Показать</a></li>
@@ -91,7 +111,7 @@
 		<footer class="main-footer">
 			<div class="footer-contacts">
 				<a class="footer-map" href="">
-					<img src="" width="" height="" alt="карта">
+					<img src="img/map.png" width="1440" height="416" alt="карта">
 				</a>
 				<a class="footer-point" href="">
 					<img src="" width="" height="" alt="nerd's">
@@ -113,9 +133,25 @@
 			<p>Давайте дружить, это выгодно!</p>
 				<span>Скидка 10% для друзей из социальных сетей</span>
 	</footer>
-		<section class="feedback">
+		<form class="feedback" method="post" action="???">
 			<h2>Напишите нам</h2>
-			<..!ФОРМА..>
+				<p>
+					<label for="feedback-name">Ваше имя:</label>
+					<input id="feedback-name" type="text"
+					name="name" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label for="feedback-mail">Ваш e-mail:</label>
+					<input id="feedback-mail" type="text"
+					name="e-mail" placeholder="email@example.com">
+				</p>
+				<p>
+					<label for="feedback-text">Текст письма:</label>
+					<input id="feedback-text" type="text"
+					name="text" placeholder="В свободной форме">
+				</p>
+				<button type="submit">Отправить</button>
+		</form><section class="feedback">
   </body>
 </html>
 		
