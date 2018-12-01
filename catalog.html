@@ -8,24 +8,24 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="/">
-				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
+				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
 			</a>
 			<ul class="site-navigation">
 				<li class="item-navigation">
-					<a href="">Студия</a>
+					<a href="studio.html">Студия</a>
 				</li>
 				<li class="item-navigation">
-					<a href="">Клиенты</a>
+					<a href="clients.html">Клиенты</a>
 				</li>
 				<li class="item-navigation">
-					<a href="">Магазин</a>
+					<a href="shop.html">Магазин</a>
 				</li>
 				<li class="item-navigation">
-					<a href="">Контакты</a>
+					<a href="contacts.html">Контакты</a>
 				</li>
 			</ul>
 			<ul class="cart-navigation">
-				<li> <a class="enter" href="">Корзина</a></li>
+				<li> <a class="enter" href="cart.html">Корзина</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -46,72 +46,94 @@
 					<img src="img/img-mishka-jpg.png" width="360" height="576" alt="Mishka">
 				</a>
 				<a class="catalog-item" href="/">
-					<img src="img/img-aplus-jpg.png" width="" height="" alt="Aplus">
+					<img src="img/img-aplus-jpg.png" width="360" height="576" alt="Aplus">
 				</a>
 				<a class="catalog-item" href="/">
-					<img src="img/img-kvast-jpg.png" width="" height="" alt="Kvast">
+					<img src="img/img-kvast-jpg.png" width="360" height="576" alt="Kvast">
 				</a>
-				<ul class="pagination-list">
-					<li class="pagination-item pagination-item-current"> <a>1</a>
-					<li class="pagination=item"> <a>2</a>
-					<li class="pagination=item"> <a>3</a>
-					<li class="pagination=item"> <a>Следующая</a>
+				<div class="pagination-list">
+					<button class="pagination-item pagination-item-current"><a>1</a></button>
+					<button class="pagination=item"><a>2</a></button>
+					<button class="pagination=item"><a>3</a></button>
+					<button class="pagination=item"> <a>Следующая</a></button>
+				</div>
 			</section>
-					<div class="filter">
-				<h3>Стоимость:</h3>
-					<ul class="filter-price">
-						<..!будет фильтр..>
-					</ul>
-				<h3>Сортировать:</h3>
-					<ul class="filter-sort">
-						<li>По цене</li>
-						<li>По типу</li>
-						<li>По названию</li>
-						<..!кнопки..>
-					</ul>
-				<h3>Сетка:</h3>
-					<ul class="filter-netting">
-						<li>Адаптивная</li>
-						<li>Фиксированная</li>
-						<li>Резиновая</li>
-					</ul>
-				<h3>Особенности:</h3>
-					<ul class="filter-pecificity">
-						<li>
-							<input type="checkbox" name="slyder" id="filter-slyder" checked>
-							<label for="filter-slyder">Cлайдер
-							</label>
-						</li>
-						<li>
-							<input type="checkbox" name="advantage" id="filter-advantage">
-							<label for="filter-advantage">Блок преимуществ
-							</label>
-						</li>
-						<li>
-							<input type="checkbox" name="news" id="filter-news" checked>
-							<label for="filter-news">Новости
-							</label>
-						</li>
-						<li>
-							<input type="checkbox" name="gallery" id="filter-gallery">
-							<label for="filter-gallery">Галерея
-							</label>
-						</li>
-						<li>
-							<input type="checkbox" name="cart" id="filter-cart">
-							<label for="filter-cart">Корзина
-							</label>
-						</li>
-					</ul>
-					<ul class="filter-total">
-						<li> <a class="show" href="">Показать</a></li>
-					</ul>
-			</div>
+			<section class="sorting-filter">
+				<div class="sorting">
+					<h3>Сортировать:</h3>
+						<ul class="sorting-item">
+							<li>По цене</li>
+							<li>По типу</li>
+							<li>По названию</li>
+							<..!кнопки..>
+						</ul>
+				</div>
+					<h3 class="visually-hidden">Фильтр товаров</h3>
+				<form class="filter" method="get" action="???">
+					<fieldset>
+						<legend>Стоимость:</legend>
+							<ul class="filter-price">
+								<..!будет фильтр..>
+							</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+							<ul class="filter-netting">
+								<li>
+									<input type="radio" name="netting" value="adantive" id="filter-adantive" checked>
+									<label for="filter-netting">Адаптивная
+									</label>
+								</li>
+								<li>
+									<input type="radio" name="netting" value="fixed" id="filter-fixed">
+									<label for="filter-fixed">Фиксированная
+									</label>		
+								</li>
+								<li>
+									<input type="radio" name="netting" value="rubber" id="filter-rubber">
+									<label for="filter-rubber">Резиновая
+									</label>
+								</li>
+							</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+							<ul class="filter-pecificity">
+								<li>
+									<input type="checkbox" name="slyder" id="filter-slyder" checked>
+									<label for="filter-slyder">Cлайдер
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" name="advantage" id="filter-advantage">
+									<label for="filter-advantage">Блок преимуществ
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" name="news" id="filter-news" checked>
+									<label for="filter-news">Новости
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" name="gallery" id="filter-gallery">
+									<label for="filter-gallery">Галерея
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" name="cart" id="filter-cart">
+									<label for="filter-cart">Корзина
+									</label>
+								</li>
+							</ul>
+					</fieldset>
+						<button type="submit" class="filter-total">Показать</button>
+				</form>
+			</section>
 		</main>
 		<footer class="main-footer">
 			<div class="footer-contacts">
 				<a class="footer-map" href="">
-					<img src="img/map.png" width="1440" height="416" alt="карта">
+					<img src="img/map.png" width="1440" height="416" alt="Офис компании: ул. Б.Конюшенная, д.19/8">
 				</a>
 				<a class="footer-point" href="">
 					<img src="" width="" height="" alt="nerd's">
