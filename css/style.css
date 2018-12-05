@@ -4,10 +4,7 @@ body	{
 		font-family: Roboto;
 		font-size: 16px;
 		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
 		line-height: 1.5;
-		letter-spacing: normal;
 		color: #283136;
 		
 		background-color: #ffffff;
@@ -20,13 +17,14 @@ a		{
 		vertical-align: middle;
 		text-transform: uppercase;
 		border: none;
+		text-decoration: none;
 		}
 .main-header-logo  {
 		
 }
 .main-navigation {
 		font-size: 17.5px;
-		line-height: 31.5;
+		line-height: 1.5;
 		color: #000000;
 		
 		background-color: grey;
@@ -41,11 +39,11 @@ a		{
 		}
 .site-navigation a:hover,
 .cart-navigation a:hover {
-		color: rgba(0, 0, 0, 0.3);
+		color: #fb565a;
 		}
 .site-navigation a:focus,
 .cart-navigation a:focus {
-		color: #fb565a;
+		color: rgba(0, 0, 0, 0.3);
 		}
 .menu-list {
 		list-style: none;
@@ -58,13 +56,46 @@ a		{
 		font-weight: bold;
 		line-height: 1.29;
 		}	
-.button a {
-		color: #ffffff;
+a.button {
 		font-size: 17.5px;
 		font-weight: 500;
 		line-height: 1;
-		text-align: center;
+		text-align: center;	
 		}
+a.button1 {
+		color: #ffffff;
+		background-color: #fb565a
+		}
+a.button1:hover {
+		background-color: #e74246;
+		}
+a.button1:focus {
+		color: rgba(255, 255, 255, 0.3);
+		background-color: #d7373b;
+		}
+a.button2 {
+		color: #ffffff;
+		 background-color: #00ca74;
+		}
+a.button2:hover {
+		background-color: #00bc6c;
+		}
+a.button2:focus {
+		color: rgba(255, 255, 255, 0.3);
+		background-color: #00aa62;
+		}
+a.button3 {
+		color: #ffffff;
+		background-color: #efc84a;
+		}
+a.button3:hover {
+		background-color: #eab534;
+		}
+a.button3:focus {
+		color: rgba(255, 255, 255, 0.3);
+		background-color: #e5a722;
+		}
+		
 .main-footer {
 		background-color: #ffffff;
 		}
@@ -79,14 +110,14 @@ a		{
 		color: #ffffff;
 		background: #e1e1e1;
 		}
-.friendship p {
+p.friendship {
 		font-size: 35px;
 		font-weight: bold;
 		line-height: 1;
 		text-align: left;
 		color: #000000;
 		}	
-.friends span {
+span.friends {
 		font-size: 16px;
 		line-height: 1.38;
 		text-align: left;
@@ -94,7 +125,7 @@ a		{
 		}
 	
 		
-.feedback h3 {
+.feedback h2 {
 		font-size: 45px;
 		font-weight: 500;
 		line-height: 1;
@@ -110,6 +141,13 @@ a		{
 		}
 		
 		
+.feedback-item {
+		font-size: 17.5px;
+		font-weight: 500;
+		color: #ffffff;
+		background-color: #fb565a;
+		}
+	
 		
 .container h1 {
 		font-size: 54px;
@@ -118,6 +156,32 @@ a		{
 		text-align: center;
 		color: #000000;
 		}
+div.catalog-item-block {
+		background-color: rgba(0, 1, 1, 0.1);
+		width: 360px;
+		height: 231px;
+		text-align: center;
+		}
+p.catalog-item-name {	
+		font-size: 17.5px;
+		font-weight: bold;
+		line-height: 1.8;
+		color: #000000;
+		}
+p.catalog-item-description {
+		font-size: 16px;
+		line-height: 1.13;
+		color: #666666;
+		}
+a.button-price{
+		font-size: 17.5px;
+		font-weight: 500;
+		line-height: 1;
+		text-align: center;
+		color: #ffffff;
+		background-color: #fb565a;
+	}
+		
 legend {
 		font-size: 17.5px;
 		font-weight: bold;
@@ -125,7 +189,27 @@ legend {
 		text-align: left;
 		color: #000000;
 		}
-.filter-netting {
+.filter-netting,
+.filter-pecificity {
+		  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  text-align: left;
+  		}
 		
+.filter-total
+		{
+		color: #000000;
+		background-color: #eeeeee;
 		}
+.filter-total:hover {
+		color: #000000;
+		background-color: #dfdfdf;
+		}
+.filter-total:focus {
+		color: rgba(0, 0, 0, 0.3);
+		background-color: #d5d5d5;
+		}	
 		
