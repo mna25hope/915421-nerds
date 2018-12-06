@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 	<header class="main-header">
@@ -57,17 +60,17 @@
 				<li class="menu-item">
 					<h3>Вэб-сайты</h3>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a href="">Заказать</a>
+					<a class="button1" href="">Заказать</a>
 				</li>
 				<li class="menu-item">
 					<h3>Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google play</p>
-					<a href="">Заказать</a>
+					<a class="button2" href="">Заказать</a>
 				</li>
 				<li class="menu-item">
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете насколько вы изумительны!</p>
-					<a href="">Заказать</a>
+					<a class="button3" href="">Заказать</a>
 				</li>
 			</ul>
 		</section>
@@ -79,30 +82,28 @@
 				<h3>выполняем заказы на разработку:</h3>
 				<ul class="presentation-order">
 					<li class="presentation-item">
-						<p>Вэб-сайтов любой сложности</p>
+						Вэб-сайтов любой сложности
 					</li>
 					<li class="presentation-item">
-						<p>Мобильных приложений для IOS и Android</p>
+						Мобильных приложений для IOS и Android
 					</li>
 					<li class="presentation-item">
-						<p>Слайдшоу и видео для корпоративных презентаций</p>
+						Слайдшоу и видео для корпоративных презентаций
 					</li>
 				</ul>
 				<p>с 2004 года любим точность во всем</p>
-				<ul class="presentation-result">
-				 <li>
-					<h3>146%</h3>
-					<p>Уровень самоотдачи</p>
-				 </li>
-				 <li>
-					<h3>100%</h3>
-					<p>Соблюдение сроков</p>
-				 </li>
-				 <li>
-					<h3>50%</h3>
-					<p>Минимальная предоплата</p>
-				 </li>
-				<ul>
+				<table class="presentation-result">
+					<tr>
+						<th>146%</th>
+						<th>100%</th>
+						<th>50%</th>
+					</tr>
+					<tr>
+						<td>Уровень<br> самоотдачи</td>
+						<td>Соблюдение<br> сроков</td>
+						<td>Минимальная<br> предоплата</td>
+					</tr>
+				</table>
 			</div>
 		</section>
 		<section class="partner">
@@ -142,8 +143,8 @@
 					<li><a class="social-button" href="#">Инстаграм</a></li>
 				</ul>
 			</div>
-			<p>Давайте дружить, это выгодно!</p>
-				<span>Скидка 10% для друзей из социальных сетей</span>
+				<p class="friendship">Давайте дружить, это выгодно!</p>
+				<span class="friends">Скидка 10% для друзей из социальных сетей</span>
 	</footer>
 		<form class="feedback" method="post" action="???">
 			<h2>Напишите нам</h2>
@@ -162,7 +163,7 @@
 					<input id="feedback-text" type="text"
 					name="text" placeholder="В свободной форме">
 				</p>
-				<button type="submit">Отправить</button>
+				<button class="feedback-item" type="submit">Отправить</button>
 		</form>
   </body>
 </html>
