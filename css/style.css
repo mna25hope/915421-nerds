@@ -1,215 +1,379 @@
+html,
+body 	{
+		min-width: 1160px;
+		min-height: 1805px; }
+
 body	{
 		margin: 0;
-	  
-		font-family: Roboto;
+		padding: 0;
+		font-family: "Roboto", Arial, sans-serif;
 		font-size: 16px;
 		font-weight: normal;
 		line-height: 1.5;
 		color: #283136;
-		
 		background-color: #ffffff;
-		}
+		background-repeat: no-repeat; }
+		
+.container {
+		width: 1080px;
+		margin: 0 auto;
+		padding: 0 10px; }
 a		{
-		text-decoration: none;
-		}
+		text-decoration: none; }
+		
 .button {
 		text-align: center;
 		vertical-align: middle;
 		text-transform: uppercase;
 		border: none;
-		text-decoration: none;
-		}
-.main-header-logo  {
+		text-decoration: none; }
 		
-}
+.main-header {
+		margin-bottom: 18px;
+		margin-top: 83px;
+		justify-content: space-between;
+		/*временно для сетки
+		min-height: 114px;
+		background-color: green;*/ }
+		
+.main-header-logo  {
+		width: 160px;
+		min-height: 65px;
+		/*временно для сетки
+		background-color: blue;*/ }
+		
 .main-navigation {
 		font-size: 17.5px;
 		line-height: 1.5;
 		color: #000000;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/*временно для сетки
+		min-height: 114px;
+		background-color: yellow;*/ }
 		
-		background-color: grey;
-		}
+.main-navigation-wrapper{
+		width: 100%;
+		margin-bottom: 36px; }
+		
+.main-navigation-wrapper .container {
+		display: flex;
+		justify-content: space-between; }
+		
+.site-navigation {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 840px;
+		/* Временно для сетки
+		min-height: 65px;
+		background-color: grey;*/ }
+		
+.cart-navigation{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 170px;
+		/* Временно для сетки 
+		min-height: 65px;
+		background-color: red;*/ }
+		
 .site-navigation,
 .cart-navigation {
-		list-style: none;
-		}
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+		
 .site-navigation a,
 .cart-navigation a {
-		color: #000000;
-		}
+		color: #000000; }
+		
 .site-navigation a:hover,
 .cart-navigation a:hover {
-		color: #fb565a;
-		}
+		color: #fb565a; }
+		
 .site-navigation a:focus,
 .cart-navigation a:focus {
-		color: rgba(0, 0, 0, 0.3);
-		}
+		color: rgba(0, 0, 0, 0.3); }
+		
+	/*слайдер*/
+.advantage {
+		min-height: 413px;
+		min-width: 820px;
+		display: flex;
+		margin-bottom: 80px;
+		/* Временно для сетки
+		background-color: purple;*/ }
+		
+	.container-menu {
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+			/* Временно для сетки 
+		background-color: black;*/ }	
+		
 .menu-list {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
 		list-style: none;
-		}
+		min-height: 347px; }
+		
 .menu-item {
+		width: 300px;
 		text-align: left;
-		}
+		min-height: 347px;
+		/* Временно для сетки */ }
+		
 .menu-item h3 {
 		font-size: 24.5px;
 		font-weight: bold;
-		line-height: 1.29;
-		}	
+		line-height: 1.29; }
+		
 a.button {
 		font-size: 17.5px;
 		font-weight: 500;
 		line-height: 1;
-		text-align: center;	
-		}
+		text-align: center;	}
+		
 a.button1 {
 		color: #ffffff;
-		background-color: #fb565a
-		}
+		background-color: #fb565a }
+		
 a.button1:hover {
-		background-color: #e74246;
-		}
+		background-color: #e74246; }
+		
 a.button1:focus {
 		color: rgba(255, 255, 255, 0.3);
-		background-color: #d7373b;
-		}
+		background-color: #d7373b; }
+		
 a.button2 {
 		color: #ffffff;
-		 background-color: #00ca74;
-		}
+		 background-color: #00ca74; }
+		 
 a.button2:hover {
-		background-color: #00bc6c;
-		}
+		background-color: #00bc6c; }
+		
 a.button2:focus {
 		color: rgba(255, 255, 255, 0.3);
-		background-color: #00aa62;
-		}
+		background-color: #00aa62; }
+		
 a.button3 {
 		color: #ffffff;
-		background-color: #efc84a;
-		}
+		background-color: #efc84a; }
+		
 a.button3:hover {
-		background-color: #eab534;
-		}
+		background-color: #eab534; }
+		
 a.button3:focus {
 		color: rgba(255, 255, 255, 0.3);
-		background-color: #e5a722;
-		}
+		background-color: #e5a722; }
 		
 .main-footer {
-		background-color: #ffffff;
-		}
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 80px;
+		/* Временно для сетки
+		min-height: 633px;
+		min-width: 1440px;
+		background-color: pink;*/ }
+		
+.wrapper-world {
+		display: flex; }
+		
+.footer-contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* Временно для сетки
+		min-width: 319px;
+		min-height: 308px;
+		background-color: blue;*/ }
 		
 .footer-social {
 		text-align: left;
-		}
+		margin-left: 139px; 
+		/* Временно для сетки 
+		background-color: red;*/ }
+		
+.friendship-list {
+		text-align: center;
+		/* Временно для сетки 
+		background-color: orange;*/ }
+		
 .footer-social ul {
-		list-style: none;
-		}
+		list-style: none; }
+		
 .social-button {
 		color: #ffffff;
-		background: #e1e1e1;
-		}
+		background: #e1e1e1; }
+		
+.social-button:hover {
+		color: #ffffff;
+		background: #e74246; }
+		
+.social-button:focus {
+		color: rgba(0, 1, 1, 0.1);
+		background: #d7373b; }		
+	
 p.friendship {
 		font-size: 35px;
 		font-weight: bold;
 		line-height: 1;
 		text-align: left;
-		color: #000000;
-		}	
+		color: #000000; }	
+		
 span.friends {
 		font-size: 16px;
 		line-height: 1.38;
 		text-align: left;
-		color: #444444;
-		}
-	
+		color: #444444; }
 		
 .feedback h2 {
 		font-size: 45px;
 		font-weight: 500;
 		line-height: 1;
 		text-align: left;
-		color: #000000;
-		}
+		color: #000000; }
+		
 .feedback p {
 		font-size: 17.5px;
 		font-weight: bold;
 		line-height: 1;
 		text-align: left;
-		color: #000000;
-		}
-		
-		
+		color: #000000; }
+			
 .feedback-item {
 		font-size: 17.5px;
 		font-weight: 500;
 		color: #ffffff;
-		background-color: #fb565a;
-		}
+		background-color: #fb565a; }
 	
-		
+.inner-page {
+	 /* Временно для сетки
+		background-size: 1050px auto;
+		background-position: top center;
+		background-repeat: no-repeat;*/ }
+
+.inner-page .main-header {
+		margin-bottom: 86px;
+		/* Временно для сетки
+		min-height: 114px;*/ }
+  
+.inner-page .main-navigation {
+		align-items: flex-start;
+		flex-direction: row; }
+
 .container h1 {
 		font-size: 54px;
 		font-weight: 500;
 		line-height: 1;
 		text-align: center;
 		color: #000000;
-		}
+		margin: 0;
+		margin-bottom: 116px;
+		padding: 0;
+		/* Временно для сетки 
+		min-height: 43px;*/ }
+		
 div.catalog-item-block {
 		background-color: rgba(0, 1, 1, 0.1);
 		width: 360px;
 		height: 231px;
-		text-align: center;
-		}
+		text-align: center; }
+		
 p.catalog-item-name {	
 		font-size: 17.5px;
 		font-weight: bold;
 		line-height: 1.8;
-		color: #000000;
-		}
+		color: #000000; }
+		
 p.catalog-item-description {
 		font-size: 16px;
 		line-height: 1.13;
-		color: #666666;
-		}
+		color: #666666; }
+		
 a.button-price{
 		font-size: 17.5px;
 		font-weight: 500;
 		line-height: 1;
 		text-align: center;
 		color: #ffffff;
-		background-color: #fb565a;
-	}
+		background-color: #fb565a; }
+		
+a.button-price:hover {
+		background-color: #e74246; }
+		
+a.button-price:focus {
+		background-color: #d7373b; }
+		
+.catalog-colums {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		/* Временно для сетки
+		background-color: green;*/ }
+		
+.catalog {
+		width: 900px;
+		/* Временно для сетки
+		min-height: 1914px;
+		background-color: grey;*/ }
+		
+.catalog-list{
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		flex-wrap: wrap; }
+		
+.catalog-item{
+		width: 360px;
+		margin-bottom: 33px;
+		margin-left: 30px; 
+		/* временно будет элемент */
+		margin-top: 40px;}
+		
+.filter	{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 260px;
+		/* Временно для сетки 
+		min-height: 772px;
+		background-color: black;*/ }	
 		
 legend {
 		font-size: 17.5px;
 		font-weight: bold;
 		line-height: 1.8;
 		text-align: left;
-		color: #000000;
-		}
+		color: #000000; }
+		
 .filter-netting,
 .filter-pecificity {
-		  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  text-align: left;
-  		}
+		font-size: 16px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.25;
+		text-align: left; }
 		
-.filter-total
-		{
+.filter-total {
 		color: #000000;
-		background-color: #eeeeee;
-		}
+		background-color: #eeeeee; }
+		
 .filter-total:hover {
 		color: #000000;
-		background-color: #dfdfdf;
-		}
+		background-color: #dfdfdf; }
+		
 .filter-total:focus {
 		color: rgba(0, 0, 0, 0.3);
-		background-color: #d5d5d5;
-		}	
+		background-color: #d5d5d5; }	
+		
+
 		
