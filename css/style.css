@@ -23,6 +23,8 @@ img {
 	height: auto; }
 	
 iframe {
+	frameborder: 0;
+	border:0;
 	margin: 0;
 	padding: 0; }
 	
